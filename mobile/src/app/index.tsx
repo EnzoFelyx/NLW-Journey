@@ -105,7 +105,6 @@ export default function Index() {
             await tripStorage.save(tripId)
             console.log(tripId)
             router.navigate("/trip/" + tripId)
-            Alert.alert("Salvar viagem", "cheguei?")
         } catch (error) {
             Alert.alert("Salvar viagem", "Não foi possível salvar o Id da viagem no dispositivo")
             console.log(error)
